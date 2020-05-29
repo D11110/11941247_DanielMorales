@@ -15,14 +15,14 @@ public class Objeto {
     private Color color;
     private String desc;
     private String marca;
-    private int tam;
+    private String tam;
     private String calidad;
-    private Persona personaIng;
+    private String personaIng;
 
     public Objeto() {
     }
 
-    public Objeto(Color color, String desc, String marca, int tam, String calidad, Persona personaIng) {
+    public Objeto(Color color, String desc, String marca, String tam, String calidad, String personaIng) {
         this.color = color;
         this.desc = desc;
         this.marca = marca;
@@ -55,11 +55,11 @@ public class Objeto {
         this.marca = marca;
     }
 
-    public int getTam() {
+    public String getTam() {
         return tam;
     }
 
-    public void setTam(int tam) {
+    public void setTam(String tam) {
         this.tam = tam;
     }
 
@@ -71,11 +71,11 @@ public class Objeto {
         this.calidad = calidad;
     }
 
-    public Persona getPersonaIng() {
+    public String getPersonaIng() {
         return personaIng;
     }
 
-    public void setPersonaIng(Persona personaIng) {
+    public void setPersonaIng(String personaIng) {
         this.personaIng = personaIng;
     }
 

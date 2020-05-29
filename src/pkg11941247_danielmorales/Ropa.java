@@ -13,14 +13,14 @@ import java.awt.Color;
  */
 public class Ropa extends Objeto{
 
-    private int talla;
+    private String talla;
     private String tipoTela;
     private String pais;
 
     public Ropa() {
     }
 
-    public Ropa(int talla, String tipoTela, String pais, Color color, String desc, String marca, int tam, String calidad, Persona personaIng) {
+    public Ropa(String talla, String tipoTela, String pais, Color color, String desc, String marca, String tam, String calidad, String personaIng) {
         super(color, desc, marca, tam, calidad, personaIng);
         this.talla = talla;
         this.tipoTela = tipoTela;
@@ -29,11 +29,11 @@ public class Ropa extends Objeto{
 
     
 
-    public int getTalla() {
+    public String getTalla() {
         return talla;
     }
 
-    public void setTalla(int talla) {
+    public void setTalla(String talla) {
         this.talla = talla;
     }
 

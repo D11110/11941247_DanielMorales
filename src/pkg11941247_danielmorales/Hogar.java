@@ -20,7 +20,7 @@ public class Hogar extends Objeto{
     public Hogar() {
     }
 
-    public Hogar(String descLugar, String instrucciones, int tiempoGarantia, Color color, String desc, String marca, int tam, String calidad, Persona personaIng) {
+    public Hogar(String descLugar, String instrucciones, int tiempoGarantia, Color color, String desc, String marca, String tam, String calidad, String personaIng) {
         super(color, desc, marca, tam, calidad, personaIng);
         this.descLugar = descLugar;
         this.instrucciones = instrucciones;
