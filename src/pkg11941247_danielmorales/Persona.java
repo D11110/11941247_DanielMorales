@@ -17,14 +17,14 @@ public class Persona {
     private int edad;
     private String sexo;
     private String estcivil;
-    private int altura;
+    private Double altura;
     private int peso;
     private ArrayList mensajes = new ArrayList();
 
     public Persona() {
     }
 
-    public Persona(int id, String nombre, int edad, String sexo, String estcivil, int altura, int peso) {
+    public Persona(int id, String nombre, int edad, String sexo, String estcivil, double altura, int peso) {
         this.id = id;
         this.nombre = nombre;
         this.edad = edad;
@@ -74,11 +74,11 @@ public class Persona {
         this.estcivil = estcivil;
     }
 
-    public int getAltura() {
+    public double getAltura() {
         return altura;
     }
 
-    public void setAltura(int altura) {
+    public void setAltura(double altura) {
         this.altura = altura;
     }
 
