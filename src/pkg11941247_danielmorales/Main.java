@@ -194,6 +194,46 @@ public class Main extends javax.swing.JFrame {
         jScrollPane6 = new javax.swing.JScrollPane();
         tabla2 = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel42 = new javax.swing.JLabel();
+        cb_personasMod = new javax.swing.JComboBox<>();
+        tf_gpassmod = new javax.swing.JTextField();
+        tf_gusermod = new javax.swing.JTextField();
+        tf_agemod = new javax.swing.JTextField();
+        tf_pesomod = new javax.swing.JTextField();
+        tf_alturamod = new javax.swing.JTextField();
+        tf_namemod = new javax.swing.JTextField();
+        tf_idmod = new javax.swing.JTextField();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        rb_sexoMmod = new javax.swing.JRadioButton();
+        jLabel46 = new javax.swing.JLabel();
+        rb_sexoFmod = new javax.swing.JRadioButton();
+        cb_cargomod = new javax.swing.JComboBox<>();
+        btn_agregarpersona1 = new javax.swing.JButton();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        rb_solteromod = new javax.swing.JRadioButton();
+        rb_casadomod = new javax.swing.JRadioButton();
+        tf_pocupacionmod = new javax.swing.JTextField();
+        jLabel55 = new javax.swing.JLabel();
+        tf_psueldomod = new javax.swing.JFormattedTextField();
+        tf_ptiempotrabajadomod = new javax.swing.JTextField();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        tf_phorariomod = new javax.swing.JTextField();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -820,6 +860,260 @@ public class Main extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Listar objeto", jPanel2);
 
+        jLabel42.setText("Seleccione la persona que desea modificar:");
+
+        cb_personasMod.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cb_personasModItemStateChanged(evt);
+            }
+        });
+
+        jLabel43.setText("Personas Generales:");
+
+        jLabel44.setText("Tiempo trabajando:");
+
+        jLabel45.setText("Estado civil:");
+
+        grupoSexo.add(rb_sexoMmod);
+        rb_sexoMmod.setText("M");
+
+        jLabel46.setText("Cargo:");
+
+        grupoSexo.add(rb_sexoFmod);
+        rb_sexoFmod.setText("F");
+
+        cb_cargomod.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Gerente de Planta", "Gerente de Sucursal" }));
+
+        btn_agregarpersona1.setText("Modificar persona");
+        btn_agregarpersona1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_agregarpersona1MouseClicked(evt);
+            }
+        });
+
+        jLabel47.setText("ID:");
+
+        jLabel48.setText("Mts.");
+
+        jLabel49.setText("Nombre:");
+
+        jLabel50.setText("Lbs.");
+
+        jLabel51.setText("Edad:");
+
+        jLabel52.setText("Sexo:");
+
+        jLabel53.setText("Altura:");
+
+        jLabel54.setText("Peso:");
+
+        grupoEstado.add(rb_solteromod);
+        rb_solteromod.setText("Soltero");
+
+        grupoEstado.add(rb_casadomod);
+        rb_casadomod.setText("Casado");
+
+        jLabel55.setText("Lps.");
+
+        tf_psueldomod.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("###0.###"))));
+
+        jLabel56.setText("Gerentes:");
+
+        jLabel57.setText("semanas");
+
+        jLabel58.setText("Sueldo:");
+
+        jLabel59.setText("Ocupacion:");
+
+        jLabel60.setText("Horario:");
+
+        jLabel61.setText("Usuario:");
+
+        jLabel62.setText("Contraseña:");
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel42)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(cb_personasMod, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel5Layout.createSequentialGroup()
+                                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabel45)
+                                        .addComponent(jLabel47)
+                                        .addComponent(jLabel49)
+                                        .addComponent(jLabel51)
+                                        .addComponent(jLabel52))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel5Layout.createSequentialGroup()
+                                            .addComponent(rb_sexoMmod)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(rb_sexoFmod))
+                                        .addGroup(jPanel5Layout.createSequentialGroup()
+                                            .addComponent(rb_solteromod)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(rb_casadomod))
+                                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addComponent(tf_idmod, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(tf_namemod, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(tf_agemod, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGap(359, 359, 359))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel61, javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabel62, javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabel46, javax.swing.GroupLayout.Alignment.TRAILING))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(tf_gusermod, javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(tf_gpassmod, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cb_cargomod, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGap(65, 65, 65)
+                                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabel58)
+                                        .addComponent(jLabel44)
+                                        .addComponent(jLabel60)
+                                        .addComponent(jLabel59))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(tf_pocupacionmod)
+                                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(tf_phorariomod, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addGroup(jPanel5Layout.createSequentialGroup()
+                                                        .addComponent(tf_ptiempotrabajadomod, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addComponent(jLabel57)))
+                                                .addGap(50, 50, 50)))
+                                        .addGroup(jPanel5Layout.createSequentialGroup()
+                                            .addComponent(tf_psueldomod, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(jLabel55)))))
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addGap(23, 23, 23)
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(jPanel5Layout.createSequentialGroup()
+                                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel53, javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(jLabel54, javax.swing.GroupLayout.Alignment.TRAILING))
+                                        .addGap(10, 10, 10)
+                                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                                .addComponent(tf_alturamod, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jLabel48))
+                                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                                .addComponent(tf_pesomod, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jLabel50))))
+                                    .addGroup(jPanel5Layout.createSequentialGroup()
+                                        .addComponent(jLabel56)
+                                        .addGap(31, 31, 31)))
+                                .addGap(218, 218, 218)
+                                .addComponent(jLabel43))
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addGap(223, 223, 223)
+                                .addComponent(btn_agregarpersona1)))))
+                .addContainerGap(220, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel42)
+                    .addComponent(cb_personasMod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel47)
+                    .addComponent(tf_idmod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel49)
+                    .addComponent(tf_namemod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(12, 12, 12)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel51)
+                    .addComponent(tf_agemod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel52)
+                    .addComponent(rb_sexoMmod)
+                    .addComponent(rb_sexoFmod))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel45)
+                    .addComponent(rb_solteromod)
+                    .addComponent(rb_casadomod))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel53)
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel54)
+                            .addComponent(tf_pesomod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(tf_alturamod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel48))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel50)))
+                .addGap(9, 9, 9)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel56)
+                    .addComponent(jLabel43))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel61)
+                            .addComponent(tf_gusermod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel62)
+                            .addComponent(tf_gpassmod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel46)
+                            .addComponent(cb_cargomod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel59)
+                            .addComponent(tf_pocupacionmod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel60)
+                            .addComponent(tf_phorariomod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel44)
+                            .addComponent(tf_ptiempotrabajadomod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel57))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel58)
+                            .addComponent(tf_psueldomod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel55))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btn_agregarpersona1)))
+                .addGap(63, 63, 63))
+        );
+
+        jTabbedPane1.addTab("Modificar personas", jPanel5);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -873,6 +1167,7 @@ public class Main extends javax.swing.JFrame {
 
                 Gerente g = new Gerente(user, pass, cargo, id, nombre, edad, sexo, estcivil, altura, peso);
                 personas.add(g);
+                gerentes.add(g);
 
                 Object[] newrow = {
                     nombre,
@@ -926,6 +1221,7 @@ public class Main extends javax.swing.JFrame {
 
                 PersonalGeneral pg = new PersonalGeneral(ocupacion, horario, tiemTrabaj, sueldo, id, nombre, edad, sexo, estcivil, altura, peso);
                 personas.add(pg);
+                personasGenerales.add(pg);
 
                 Object[] newrow = {
                     nombre,
@@ -1002,23 +1298,30 @@ public class Main extends javax.swing.JFrame {
 
     private void jTabbedPane1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jTabbedPane1StateChanged
         // TODO add your handling code here:
-        if (jTabbedPane1.getSelectedIndex() == 2) {
+        if (jTabbedPane1.getSelectedIndex() == 2 || jTabbedPane1.getSelectedIndex() == 4) {
             DefaultComboBoxModel modelo = (DefaultComboBoxModel) cb_personaingresada.getModel();
+            DefaultComboBoxModel modelo1 = (DefaultComboBoxModel) cb_personasMod.getModel();
 
             for (int i = 0; i < modelo.getSize(); i++) {
                 modelo.removeElementAt(i);
+            }
+            for (int i = 0; i < modelo1.getSize(); i++) {
+                modelo1.removeElementAt(i);
             }
 
             for (int i = 0; i < personas.size(); i++) {
                 String nombre = ((Persona) personas.get(i)).getNombre();
                 modelo.addElement(nombre);
+                modelo1.addElement(nombre);
             }
 
             cb_personaingresada.setModel(modelo);
+            cb_personasMod.setModel(modelo1);
         }
     }//GEN-LAST:event_jTabbedPane1StateChanged
 
     ArrayList objetos = new ArrayList();
+    ArrayList personasGenerales = new ArrayList();
 
     private void btn_agregarobjetoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_agregarobjetoMouseClicked
         // TODO add your handling code here:
@@ -1224,6 +1527,178 @@ public class Main extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton1MouseClicked
 
+    private void btn_agregarpersona1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_agregarpersona1MouseClicked
+        // TODO add your handling code here:
+        
+        
+    }//GEN-LAST:event_btn_agregarpersona1MouseClicked
+
+    static ArrayList gerentes = new ArrayList();
+    static int id, edad, peso, tiempTrab;
+    static double altura, sueldo;
+    static String nombre, sexo, estcivil, usuario, contra, cargo, idString = "", edadString = "", alturaString = "", pesoString = "", ocupacion, horario, tiempString = "", sueldoString = "";
+    static int indiceMod = 0;
+    static int indGer = 0;
+    static int indPer = 0;
+
+    private void cb_personasModItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_personasModItemStateChanged
+        // TODO add your handling code here:
+        String nombrePersonaAModificar = cb_personasMod.getSelectedItem().toString();
+        
+        for (int i = 0; i < personas.size(); i++) {
+            if (nombrePersonaAModificar.equalsIgnoreCase(((Persona) personas.get(i)).getNombre())) {
+                indiceMod = i;
+            }
+        }
+
+        if (personas.get(indiceMod) instanceof Gerente) {
+            tf_gusermod.setEnabled(true);
+            tf_gpassmod.setEnabled(true);
+            cb_cargomod.setEnabled(true);
+            tf_phorariomod.setEnabled(false);
+            tf_pocupacionmod.setEnabled(false);
+            tf_psueldomod.setEnabled(false);
+            tf_ptiempotrabajadomod.setEnabled(false);
+
+            tf_phorariomod.setText("");
+            tf_pocupacionmod.setText("");
+            tf_psueldomod.setText("");
+            tf_ptiempotrabajadomod.setText("");
+
+            id = ((Persona) personas.get(indiceMod)).getId();
+            nombre = ((Persona) personas.get(indiceMod)).getNombre();
+            edad = ((Persona) personas.get(indiceMod)).getEdad();
+            sexo = ((Persona) personas.get(indiceMod)).getSexo();
+            estcivil = ((Persona) personas.get(indiceMod)).getEstcivil();
+            altura = ((Persona) personas.get(indiceMod)).getAltura();
+            peso = ((Persona) personas.get(indiceMod)).getPeso();
+
+            
+            for (int i = 0; i < gerentes.size(); i++) {
+                if (nombre.equals(((Gerente) gerentes.get(i)).getNombre())) {
+                    indGer = i;
+                }
+            }
+
+            usuario = ((Gerente) gerentes.get(indGer)).getUsuario();
+            contra = ((Gerente) gerentes.get(indGer)).getContraseña();
+            cargo = ((Gerente) gerentes.get(indGer)).getCargo();
+
+            idString = "";
+            idString += id;
+            edadString = "";
+            edadString += edad;
+            tf_idmod.setText(idString);
+            tf_namemod.setText(nombre);
+            tf_agemod.setText(edadString);
+            if (sexo.equalsIgnoreCase("M")) {
+                rb_sexoMmod.setSelected(true);
+                rb_sexoFmod.setSelected(false);
+            } else {
+                rb_sexoMmod.setSelected(false);
+                rb_sexoFmod.setSelected(true);
+            }
+            if (estcivil.equalsIgnoreCase("Soltero")) {
+                rb_solteromod.setSelected(true);
+                rb_casadomod.setSelected(false);
+            } else {
+                rb_solteromod.setSelected(false);
+                rb_casadomod.setSelected(true);
+            }
+            alturaString = "";
+            alturaString += altura;
+            tf_alturamod.setText(alturaString);
+            pesoString = "";
+            pesoString += peso;
+            tf_pesomod.setText(pesoString);
+            tf_gusermod.setText(usuario);
+            tf_gpassmod.setText(contra);
+            cb_cargomod.setSelectedItem(cargo);
+
+            JOptionPane.showMessageDialog(this, "Cambie los campos para modificar y despues presione el boton modificar");
+
+        }
+        if (personas.get(indiceMod) instanceof PersonalGeneral) {
+            tf_gusermod.setText("");
+            tf_gpassmod.setText("");
+            tf_idmod.setText("");
+            tf_namemod.setText("");
+            tf_agemod.setText("");
+            tf_alturamod.setText("");
+            tf_pesomod.setText("");
+
+            tf_gusermod.setEnabled(false);
+            tf_gpassmod.setEnabled(false);
+            cb_cargomod.setEnabled(false);
+            tf_phorariomod.setEnabled(true);
+            tf_pocupacionmod.setEnabled(true);
+            tf_psueldomod.setEnabled(true);
+            tf_ptiempotrabajadomod.setEnabled(true);
+
+            id = ((Persona) personas.get(indiceMod)).getId();
+            nombre = ((Persona) personas.get(indiceMod)).getNombre();
+            edad = ((Persona) personas.get(indiceMod)).getEdad();
+            sexo = ((Persona) personas.get(indiceMod)).getSexo();
+            estcivil = ((Persona) personas.get(indiceMod)).getEstcivil();
+            altura = ((Persona) personas.get(indiceMod)).getAltura();
+            peso = ((Persona) personas.get(indiceMod)).getPeso();
+
+            
+
+            for (int i = 0; i < personasGenerales.size(); i++) {
+                if (nombre.equalsIgnoreCase(((PersonalGeneral) personasGenerales.get(i)).getNombre())) {
+                    indPer = i;
+                }
+            }
+            idString = "";
+            idString += id;
+
+            edadString = "";
+            edadString += edad;
+
+            ocupacion = ((PersonalGeneral) personasGenerales.get(indPer)).getOcupacion();
+            horario = ((PersonalGeneral) personasGenerales.get(indPer)).getHorario();
+            tiempTrab = ((PersonalGeneral) personasGenerales.get(indPer)).getTiempotrabajo();
+            tiempString += tiempTrab;
+            sueldo = ((PersonalGeneral) personasGenerales.get(indPer)).getSueldo();
+            sueldoString = "";
+            sueldoString += sueldo;
+
+            tf_idmod.setText(idString);
+            tf_namemod.setText(nombre);
+            tf_agemod.setText(edadString);
+            if (sexo.equalsIgnoreCase("M")) {
+                rb_sexoMmod.setSelected(true);
+                rb_sexoFmod.setSelected(false);
+            } else {
+                rb_sexoMmod.setSelected(false);
+                rb_sexoFmod.setSelected(true);
+            }
+            if (estcivil.equalsIgnoreCase("Soltero")) {
+                rb_solteromod.setSelected(true);
+                rb_casadomod.setSelected(false);
+            } else {
+                rb_solteromod.setSelected(false);
+                rb_casadomod.setSelected(true);
+            }
+            alturaString = "";
+            alturaString += altura;
+            tf_alturamod.setText(alturaString);
+            pesoString = "";
+            pesoString += peso;
+            tf_pesomod.setText(pesoString);
+            tf_pocupacionmod.setText(ocupacion);
+            tf_phorariomod.setText(horario);
+            tf_ptiempotrabajadomod.setText(tiempString);
+            tf_psueldomod.setText(sueldoString);
+
+            JOptionPane.showMessageDialog(this, "Cambie los campos para modificar y despues presione el boton modificar");
+
+        }
+
+
+    }//GEN-LAST:event_cb_personasModItemStateChanged
+
     /**
      * @param args the command line arguments
      */
@@ -1262,10 +1737,13 @@ public class Main extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_agregarobjeto;
     private javax.swing.JButton btn_agregarpersona;
+    private javax.swing.JButton btn_agregarpersona1;
     private javax.swing.JButton btn_color;
     private javax.swing.JButton btn_eliminarPersona;
     private javax.swing.JComboBox<String> cb_cargo;
+    private javax.swing.JComboBox<String> cb_cargomod;
     private javax.swing.JComboBox<String> cb_personaingresada;
+    private javax.swing.JComboBox<String> cb_personasMod;
     private javax.swing.JComboBox<String> cb_tipoPersona;
     private javax.swing.JComboBox<String> cb_tipoobjeto;
     private javax.swing.ButtonGroup grupoEstado;
@@ -1308,8 +1786,29 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -1317,6 +1816,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -1325,19 +1825,25 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JRadioButton rb_casado;
+    private javax.swing.JRadioButton rb_casadomod;
     private javax.swing.JRadioButton rb_sexoF;
+    private javax.swing.JRadioButton rb_sexoFmod;
     private javax.swing.JRadioButton rb_sexoM;
+    private javax.swing.JRadioButton rb_sexoMmod;
     private javax.swing.JRadioButton rb_sizeL;
     private javax.swing.JRadioButton rb_sizeM;
     private javax.swing.JRadioButton rb_sizeS;
     private javax.swing.JRadioButton rb_sizeXL;
     private javax.swing.JRadioButton rb_soltero;
+    private javax.swing.JRadioButton rb_solteromod;
     private javax.swing.JTextArea ta_descripciongeneral;
     private javax.swing.JTextArea ta_descripcionh;
     private javax.swing.JTextArea ta_descz;
     private javax.swing.JTextArea ta_instruccionesh;
     private javax.swing.JTable tabla1;
     private javax.swing.JTable tabla2;
+    private javax.swing.JTextField tf_agemod;
+    private javax.swing.JTextField tf_alturamod;
     private javax.swing.JTextField tf_calidad;
     private javax.swing.JFormattedTextField tf_comodidadz;
     private javax.swing.JTextField tf_gage;
@@ -1346,14 +1852,23 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField tf_gid;
     private javax.swing.JTextField tf_gname;
     private javax.swing.JTextField tf_gpass;
+    private javax.swing.JTextField tf_gpassmod;
     private javax.swing.JTextField tf_gpeso;
     private javax.swing.JTextField tf_guser;
+    private javax.swing.JTextField tf_gusermod;
+    private javax.swing.JTextField tf_idmod;
     private javax.swing.JTextField tf_marca;
+    private javax.swing.JTextField tf_namemod;
     private javax.swing.JTextField tf_paisr;
+    private javax.swing.JTextField tf_pesomod;
     private javax.swing.JTextField tf_phorario;
+    private javax.swing.JTextField tf_phorariomod;
     private javax.swing.JTextField tf_pocupacion;
+    private javax.swing.JTextField tf_pocupacionmod;
     private javax.swing.JFormattedTextField tf_psueldo;
+    private javax.swing.JFormattedTextField tf_psueldomod;
     private javax.swing.JTextField tf_ptiempotrabajado;
+    private javax.swing.JTextField tf_ptiempotrabajadomod;
     private javax.swing.JFormattedTextField tf_tallaz;
     private javax.swing.JTextField tf_tama;
     private javax.swing.JTextField tf_tipotelar;
