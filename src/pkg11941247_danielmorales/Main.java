@@ -1529,8 +1529,66 @@ public class Main extends javax.swing.JFrame {
 
     private void btn_agregarpersona1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_agregarpersona1MouseClicked
         // TODO add your handling code here:
-        
-        
+        if ((Persona) personas.get(indiceMod) instanceof Gerente) {
+            id = Integer.parseInt(tf_idmod.getText());
+            nombre = tf_namemod.getText();
+            edad = Integer.parseInt(tf_agemod.getText());
+            if (rb_sexoMmod.isSelected()) {
+                sexo = "M";
+            } else {
+                sexo = "F";
+            }
+            if (rb_solteromod.isSelected()) {
+                estcivil = "Soltero";
+            } else {
+                estcivil = "Casado";
+            }
+            altura = Double.parseDouble(tf_alturamod.getText());
+            peso = Integer.parseInt(tf_pesomod.getText());
+            usuario = tf_gusermod.getText();
+            contra = tf_gpassmod.getText();
+            cargo = cb_cargomod.getSelectedItem().toString();
+
+            personas.remove(indiceMod);
+            gerentes.remove(indGer);
+            Gerente g = new Gerente(usuario, contra, cargo, id, nombre, edad, sexo, estcivil, altura, peso);
+            gerentes.add(g);
+            personas.add(g);
+            JOptionPane.showMessageDialog(this, "Gerente modificado exitosamente");
+
+        } else if ((Persona) personas.get(indiceMod) instanceof PersonalGeneral) {
+            id = Integer.parseInt(tf_idmod.getText());
+            nombre = tf_namemod.getText();
+            edad = Integer.parseInt(tf_agemod.getText());
+            if (rb_sexoMmod.isSelected()) {
+                sexo = "M";
+            } else {
+                sexo = "F";
+            }
+            if (rb_solteromod.isSelected()) {
+                estcivil = "Soltero";
+            } else {
+                estcivil = "Casado";
+            }
+            altura = Double.parseDouble(tf_alturamod.getText());
+            peso = Integer.parseInt(tf_pesomod.getText());
+            ocupacion = tf_pocupacionmod.getText();
+            horario = tf_phorariomod.getText();
+            tiempTrab = Integer.parseInt(tf_ptiempotrabajadomod.getText());
+            sueldo = Integer.parseInt(tf_psueldomod.getText());
+
+            PersonalGeneral pg = new PersonalGeneral(ocupacion, horario, tiempTrab, sueldo, id, nombre, edad, sexo, estcivil, altura, peso);
+
+            personas.remove(indiceMod);
+            personasGenerales.remove(indPer);
+
+            personas.add(pg);
+            personasGenerales.add(pg);
+
+            JOptionPane.showMessageDialog(this, "Personal general modificado exitosamente");
+
+        }
+
     }//GEN-LAST:event_btn_agregarpersona1MouseClicked
 
     static ArrayList gerentes = new ArrayList();
@@ -1544,7 +1602,7 @@ public class Main extends javax.swing.JFrame {
     private void cb_personasModItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_personasModItemStateChanged
         // TODO add your handling code here:
         String nombrePersonaAModificar = cb_personasMod.getSelectedItem().toString();
-        
+
         for (int i = 0; i < personas.size(); i++) {
             if (nombrePersonaAModificar.equalsIgnoreCase(((Persona) personas.get(i)).getNombre())) {
                 indiceMod = i;
@@ -1573,7 +1631,6 @@ public class Main extends javax.swing.JFrame {
             altura = ((Persona) personas.get(indiceMod)).getAltura();
             peso = ((Persona) personas.get(indiceMod)).getPeso();
 
-            
             for (int i = 0; i < gerentes.size(); i++) {
                 if (nombre.equals(((Gerente) gerentes.get(i)).getNombre())) {
                     indGer = i;
@@ -1642,8 +1699,6 @@ public class Main extends javax.swing.JFrame {
             estcivil = ((Persona) personas.get(indiceMod)).getEstcivil();
             altura = ((Persona) personas.get(indiceMod)).getAltura();
             peso = ((Persona) personas.get(indiceMod)).getPeso();
-
-            
 
             for (int i = 0; i < personasGenerales.size(); i++) {
                 if (nombre.equalsIgnoreCase(((PersonalGeneral) personasGenerales.get(i)).getNombre())) {
